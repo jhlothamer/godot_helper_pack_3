@@ -1,3 +1,4 @@
+Looking for a version for Godot 4.x?  Look at [this repo](https://github.com/jhlothamer/godot_helper_pack)
 # Godot Helper Pack (For Godot 3.x)
 This Godot Engine add-on is a collection of helper scripts and classes.  Please see below for a list of classes and utilities for details.
 
@@ -12,4 +13,4 @@ Now all of the classes and utilities will be available for use.  Also, after ena
 
 ## Classes and Utilities
 
-Please see the [repo wiki](https://github.com/jhlothamer/godot_helper_pack/wiki) for a list of classes and utilities.
+Please see the [repo wiki](https://github.com/jhlothamer/godot_helper_pack_3/wiki) for a list of classes and utilities.
