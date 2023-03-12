@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://addons/godot_helper_pack/core/2d/camera/behavior/camera_limiter.gd" type="Script" id=1]
 [ext_resource path="res://addons/godot_helper_pack/core/2d/camera/behavior/camera_move.gd" type="Script" id=2]
 [ext_resource path="res://addons/godot_helper_pack/core/2d/camera/behavior/camera_shake.gd" type="Script" id=3]
 [ext_resource path="res://addons/godot_helper_pack/core/2d/camera/behavior/camera_zoom.gd" type="Script" id=4]
 [ext_resource path="res://demos/core/2d/camera/behavior/camera_behavior_demo.gd" type="Script" id=5]
+[ext_resource path="res://demos/core/2d/camera/behavior/axis_markers.png" type="Texture" id=6]
 
 [sub_resource type="OpenSimplexNoise" id=1]
 
@@ -101,6 +102,23 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="XAxis" type="TextureRect" parent="Background"]
+margin_top = 1952.0
+margin_right = 4000.0
+margin_bottom = 2002.0
+mouse_filter = 2
+texture = ExtResource( 6 )
+stretch_mode = 2
+
+[node name="YAxis" type="TextureRect" parent="Background"]
+margin_left = 2048.0
+margin_right = 6048.0
+margin_bottom = 50.0
+rect_rotation = 90.0
+mouse_filter = 2
+texture = ExtResource( 6 )
+stretch_mode = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

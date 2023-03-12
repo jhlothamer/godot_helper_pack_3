@@ -85,9 +85,11 @@ func _clear_distribution():
 
 
 func _do_distribution():
+	yield(get_tree(), "idle_frame")
 	_refresh_references()
 	if !_mmi or !_mi:
 		status = "MultiMeshInstanceDistribution: missing or bad nodepaths.  Please check nodepath properties."
+		emit_signal("operation_completed")
 		return
 	
 	_carving_polygons.append_array(_additional_distribution_carving_polygons)
